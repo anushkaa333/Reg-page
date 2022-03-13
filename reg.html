@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            height: 100vh;
+            width : 100vw;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            font-family: sans-serif;
+        }
+        .parent{
+            height:650px;
+            width: 330px;
+            background-color: rgb(86, 86, 185);
+            position: relative;
+            display: flex;
+            overflow: hidden;
+            /*justify-content: center;*/
+            /*align-items: center;*/
+            flex-direction: column;
+            border-radius: 20px;
+            box-shadow: 5px 5px  20px gray;
+        }
+     
+        
+
+        .child{
+       height: 100%;
+        width: 100%;
+        background: #ffffff;
+        position: absolute;
+        top: 5%;
+        border-top-left-radius: 50px;
+        
+      }
+
+      p{
+          text-align: center;
+          font-size: 15px;
+          margin-top: 10px;
+          text-transform: uppercase;
+          font-weight: 700;
+          letter-spacing: 0.3em;
+      }
+
+      .input-field{
+          margin-top: 10px;
+          padding: 20px;
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+      }
+
+      /*.input{
+        padding-bottom: 20px;
+        display: flex;
+        gap: 0px;
+        
+      }*/
+      label{
+            display: flex;
+           flex-direction: row;
+          
+      }
+      
+
+      .input-field input {
+          background-color: #f1f3f5;
+          border: none;
+          padding: 10px 3px;
+          border-radius: 30px;
+          font-size: 18px;
+          outline: none;
+          margin-top: 0px;
+      }
+
+
+       button{
+           
+           /*margin-left: px;*/
+           background-color: rgb(86, 86, 185) ;
+           padding: 5px 0px;
+           border: none;
+           border-radius: 20px;
+           height: 30px;
+           cursor: pointer;
+           color: white;
+           font-size: 20px;
+       }
+
+       button:hover{
+           background-color: rgb(6, 6, 131);
+       }
+
+       .star{
+           color: red;
+       }
+
+    </style>
+
+</head>
+<body>
+    <section class="parent">
+        
+        <p> Registration </p>
+        <div class="child"> 
+            
+            <div class="input-field">
+                <div class="input">
+                    <label>Name <div class="star">*</div></label>
+                    <br>
+                    <input type="text"/>
+                </div>
+                <div class="input">
+                    <label>Email <div class="star">*</div></label>
+                    <br>
+                    <input type="email"/>
+                </div>
+                <div class="input">
+                    <label>Password<div class="star">*</div></label>
+                    <br>
+                    <input type="password"/>
+                </div>
+                <div class="input">
+                    <label>Contact Number<div class="star">*</div></label>
+                    <br>
+                    <input type="tel"/>
+                </div>
+                <div class="input">
+                    <label>Demat Account<div class="star">*</div></label>
+                    <input type="radio" name="yn"> Yes
+                    <input type="radio" name="yn"> No
+                </div>
+                <div class="input">
+                    <label>Birthdate<div class="star">*</div></label>
+                    <br>
+                    <input type="date"/>
+                </div>
+
+                <button> Register </button>
+             </div>
+
+             
+        </div>
+    </section>
+</body>
+</html>
